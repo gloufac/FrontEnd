@@ -1,0 +1,189 @@
+body{
+    display: contents;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+    margin: 0;
+    width: 100%;
+}
+/*HEADER barras de navegacion*/
+#barradescuento{
+    display: block;
+    background-color: #D1891C;
+    padding: 5px 15px;
+}
+#titlepage{
+    align-items: center;
+    background-color: #00669F;
+    color: #FFFFFF;
+    display: flex;
+    font-size: 2em;
+    font-weight: 500;
+    padding: 20px;
+}
+
+/*MAIN*/
+main{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    position: relative;    
+}
+main *{
+    display: flex;
+}
+.main2{
+    margin-bottom: 80px;
+}
+/*Pagina inicio*/
+.personajes{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+}
+    .personajes .personaje{
+        background-color: #F3F3F3;
+        border: solid 0px black;
+        border-radius: 16px 16px 0px 0px;
+        flex-direction: column;
+        margin: 15px;
+        width: 300px;
+        height: 650px;
+    }
+        .image-back{
+            position: relative;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            height: 190px;
+            background-repeat: no-repeat, no-repeat;
+            border-radius: 16px 16px 0px 0px;
+            background-size: cover;
+        }
+            .image-back.batman{
+                background-image: url("../img/batman_back.png");      
+            }
+            .image-back.harley{
+                background-image: url("../img/harley_back.png");
+            }
+            .image-back.superman{
+                background-image: url("../img/superman_back.png");
+            }
+            .image-back.mujermaravilla{
+                background-image: url("../img/mujermaravilla_back.png");
+            }
+        .like{
+            position: absolute;
+            top: 15px;
+            left: 20px;
+        }
+        .picture{
+            border-radius: 50%;
+            height: 140px;
+            position: absolute;
+            top: 125px;
+            width: 140px;
+        }
+        .personajes .personaje p{
+            background-color: #F3F3F3;
+            font-size: 16px;
+            margin: 20px;
+            line-height: 19px;
+        }
+        /*boton ver mas*/
+        .personaje button{
+            align-self: center;
+            background-color: #00669F;
+            border: 0;
+            border-radius: 5px;
+            color: #F3F3F3;
+            display: flex;
+            font-size: 1em;
+            justify-content: center;
+            margin: 10px;
+            padding: 20px;
+            width: 60%;
+        }
+h3{
+    align-self: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 90px;
+}
+.div-front{
+    position: absolute;
+    top: 620px;
+    right: 10px;
+}
+    .btn-add{
+        align-items: center;
+        background-color: #00669F;
+        color: #FFF9F9;
+        border: 0;
+        border-radius: 50%;
+        font-size: 4em;
+        height: 80px;
+        justify-content: center;
+        margin: 10px;
+        padding: 0;
+        width: 80px;
+    }
+    .btn-add:hover{
+        cursor: pointer;
+    }
+
+ /*Media queries*/   
+@media (min-width: 300px){
+    .personajes{
+        flex-direction: column;
+        width: 100%;
+    }
+    .personaje .image-back.superman .picture{
+        content: url('../img/superman_movil.png');
+    }
+}
+@media (min-width: 800px){
+    .main2{
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+    .personajes{
+        flex-direction: row;
+        width: 100%;
+    }
+    .personaje .image-back.superman .picture{
+        content: url('../img/superman.png');
+    }
+}
+@media (min-width: 1500px){
+    .main2{
+        width: 100%;
+    }
+}
+/*FOOTER*/
+footer{
+    align-items: center;
+    background-color: #00669F;
+    bottom: 0px;
+    color: #FFF9F9;
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    justify-content: space-between;
+    padding: 15px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
+footer div{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    right: 60px;
+}
+
+footer div img{
+    height: 30px;
+}

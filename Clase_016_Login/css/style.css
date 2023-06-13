@@ -1,0 +1,338 @@
+body{
+    display: contents;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+    margin: 0;
+    width: 100%;
+}
+
+/* Etiquetas en general*/
+a{
+    color: #FFFFFF;
+    display: contents;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+a:hover{
+    cursor: pointer;
+}
+ol {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+ol li {
+    margin: 10px;
+}
+
+/*HEADER barras de navegacion*/
+#barradescuento{
+    display: block;
+    background-color: #1CD1B0;
+    padding: 5px 15px;
+}
+#logotienda{
+    align-items: center;
+    background-color: #00669F;
+    color: #FFFFFF;
+    display: flex;
+    font-size: 2em;
+    font-weight: 500;
+}
+#menunavegacion{
+    background-color: #001D2D;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 0;
+}
+
+/*MAIN*/
+main{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+main *{
+    display: flex;
+}
+/*Pagina inicio*/
+.personajes{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+}
+    .personajes .personaje{
+        background-color: #F3F3F3;
+        border: solid 0px black;
+        border-radius: 16px 16px 0px 0px;
+        flex-direction: column;
+        margin: 15px;
+        width: 300px;
+        height: 600px;
+    }
+        .image-back{
+            position: relative;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            height: 190px;
+            background-repeat: no-repeat, no-repeat;
+            border-radius: 16px 16px 0px 0px;
+            background-size: cover;
+        }
+            .image-back.batman{
+                background-image: url("../img/batman_back.png");      
+            }
+            .image-back.harley{
+                background-image: url("../img/harley_back.png");
+            }
+        .like{
+            position: absolute;
+            top: 15px;
+            left: 20px;
+        }
+        .picture{
+            border-radius: 50%;
+            height: 140px;
+            position: absolute;
+            top: 110px;
+            width: 140px;
+        }
+        .personajes .personaje p{
+            background-color: #F3F3F3;
+            font-size: 16px;
+            margin: 20px;
+            line-height: 19px;
+        }
+        /*boton ver mas*/
+        .personaje button{
+            align-self: center;
+            background-color: #00669F;
+            border: 0;
+            border-radius: 5px;
+            color: #F3F3F3;
+            display: flex;
+            font-size: 1em;
+            justify-content: center;
+            margin: 10px;
+            padding: 20px;
+            width: 60%;
+        }
+h3{
+    align-self: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 90px;
+}
+.btn-add{
+    background-color: #00669F;
+    color: #FFF9F9;
+    border: 0;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    font-size: 4em;
+    padding: 0;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.btn-add:hover{
+    background-color: #001D2D;
+}
+
+/*MAIN > FORMULARIOS*/
+.main2{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-evenly;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.main2 *{
+    display: flex;
+}
+.frm{
+    align-items: center;
+    align-content: space-evenly;
+    background-color: #00669F;
+    border-radius: 50px;
+    color: #FFF9F9;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    width: 60%;
+}
+label, input{
+    font-size: 20px;
+    font-weight: 100;
+}
+input[type=text],[type='password'],[type='date'],[type='email'], textarea, select {
+    border-radius: 15px;
+    border: 0;
+    font-size: 20px;
+    padding: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+textarea{
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+}
+
+.btn{
+    background-color: #1CD1B0;
+    color: #000000;
+    border: 0;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 30px;
+}
+    .btn:hover{
+        background-color: #001D2D;
+        color: #FFFFFF;
+    }
+button:hover, .btn:hover{
+    cursor: pointer;
+}
+
+/*Form: Agregar Heroe*/
+.divcentral{
+    align-items: center;
+    background-color: #00669F;
+    border-radius: 50px;
+    color: #FFF9F9;
+    flex-direction: column;
+    font-size: 2em;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.divcentral h2{
+    margin: 10px;
+}
+.divcentral span{
+    font-weight: 100;
+    font-size: 24px;
+    text-align: center;
+}
+
+.divcentral .frm-addsuper{
+    width: 100%;
+}
+.frm-addsuper{
+    flex-direction: column;
+}
+    .frm-addsuper div{
+        flex-direction: row;
+        margin: 12px;
+    }
+    .frm-addsuper div div{
+        flex-direction: column;
+    }
+    hr{
+        display: block !important;
+        width: 100%;
+        color: #CCCCCC;
+    }
+    input[type=file]{
+        border-radius: 15px;
+        font-size: 13px;
+    }
+    .frm-addsuper label{
+        margin: 10px;
+    }
+    .frm-addsuper .lbl-options{
+        margin: 3px;
+    }
+    input[type="checkbox"]:checked, input[type="radio"]:checked{
+        accent-color: #34CEFF;
+    }
+.btn-addsuper{
+    font-size: 40px;
+}
+
+/*Form: registro*/
+.frm-commonform div{
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 70%;
+}
+    .frm-commonform div label{
+        align-self: flex-start;
+        margin: 10px;
+    }
+    .frm-commonform div span{
+        align-self: flex-end;
+        font-size: 12px;
+        font-style: italic;
+        margin: 0;
+        padding: 0;
+    }
+ /*Media queries*/   
+@media (min-width: 300px){
+    .divcentral{
+        width: 80%;
+    }
+    .frm-addsuper div{
+        flex-direction: column;
+    }
+}
+@media (min-width: 400px){
+    .personajes{
+        flex-direction: column;
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (min-width: 830px){
+    .divcentral{
+        width: 80%;
+    }
+    .frm-addsuper div{
+        flex-direction: row;
+    }
+    .frm-registro{
+        width: 800px;
+        height: 850px;
+    }
+    .frm-login{
+        width: 800px;
+        height: 450px;
+    }
+}
+@media (min-width: 1100px){
+    .divcentral{
+        height: 910px;
+        width: 820px;
+    }
+    .personajes{
+        flex-direction: row;
+        width: 100%;
+    }
+}
+/*FOOTER*/
+footer{
+    position: fixed;
+    bottom: 0px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-color: #00669F;
+    color: #FFF9F9;
+    font-size: 15px;
+    padding: 15px;
+}
